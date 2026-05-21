@@ -185,7 +185,7 @@
     gallery.innerHTML = '';
 
     files.forEach((file, i) => {
-      const src = '/photos/' + file;
+      const src = 'photos/' + file;
       const item = document.createElement('div');
       item.className = 'gallery-item';
 
@@ -224,7 +224,7 @@
 
   function showLightboxItem() {
     const file = currentFiles[currentIndex];
-    document.getElementById('lb-img').src = '/photos/' + file;
+    document.getElementById('lb-img').src = 'photos/' + file;
     document.getElementById('lb-name').textContent = file;
   }
 
